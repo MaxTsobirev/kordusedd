@@ -50,7 +50,48 @@ namespace kordusedd
             } while (nr != nimed.Length);
             Console.ReadLine();*/
 
-
+            private static void n1()
+            {
+                int A = rnd.Next(1, 25);//arvuti arv
+                int AA; //kasutaja arv
+                int K = 1; //katsed
+            do
+            {
+                Console.WriteLine("{0}Katse. Mis arv?",K);
+                AA = int.Parse(Console.ReadLine());
+                K++;
+            } while (AA!=A && K!=6);
+            if (AA=A)
+            {
+                Console.WriteLine("Palju õnne!");
+            }
+            else
+            {
+                Console.WriteLine("Proovi Veel");
+            }
+            int arv;
+            int[] arvud = new int[4];
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine("Sisesta {0} arv:", i + 1);
+                arv = int.Parse(Console.ReadLine());
+                arvud[i] = arv;
+            }
+            Array.Sort(arvud);
+            foreach (var a in arvud)
+            {   
+                Console.WriteLine(a);
+            }
+            Array.Sort(arvud);
+            
+            int arv4 = 0;
+            Array.Reverse(arvud);
+            foreach (var a in arvud)
+            {
+                arv4 = (arv4 + a)*10;
+            }
+            Console.ReadLine();
+            }
         }
     }
 }
