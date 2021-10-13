@@ -8,7 +8,7 @@ namespace kordusedd
 {
     class Program
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             Random rnd = new Random();
             int N = rnd.Next(2, 6);
@@ -48,7 +48,7 @@ namespace kordusedd
                 Console.WriteLine("Tere, {0} õpilane", nimed[nr]);
                 nr++;
             } while (nr != nimed.Length);
-            Console.ReadLine();
+            Console.ReadLine();*/
 
 
         }
